@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shalat Tahajjud — Contoh Layout</title>
+  <style>
+    /* Reset kecil */
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #fff;
+      color: #111;
+      margin: 0;
+      padding: 20px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Container seperti kolom sempit di contoh */
+    .paper {
+      max-width: 480px;      /* sesuaikan lebar mirip gambar */
+      margin: 0 auto;
+      padding: 18px 22px;
+    }
+
+    /* Judul */
+    .title {
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 34px;      /* besar seperti gambar */
+      margin: 6px 0 18px;
+    }
+
+    /* Paragraf umum */
+    p {
+      margin: 0 0 12px;
+      line-height: 1.35;
+      text-align: justify;  /* rata kanan-kiri */
+      font-size: 16px;
+    }
+
+    /* Paragraf pembuka diberi indent */
+    .lead {
+      text-indent: 30px;    /* menjorok seperti contoh */
+      margin-bottom: 10px;
+    }
+
+    /* Subjudul kecil / tebal */
+    .sub {
+      font-weight: 700;
+      margin: 6px 0 10px;
+      font-size: 16px;
+    }
+
+    /* Daftar bernomor dengan hanging indent */
+    ol.hanging {
+      counter-reset: item;
+      margin: 0 0 14px 0;
+      padding-left: 0;
+      list-style: none; /* kita buat nomor sendiri */
+    }
+
+    ol.hanging li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 46px;    /* ruang untuk nomor di kiri */
+      margin-bottom: 10px;
+      text-align: justify;
+      line-height: 1.35;
+      font-size: 16px;
+    }
+
+    /* nomor styling */
+    ol.hanging li::before {
+      content: counter(item) ".";
+      position: absolute;
+      left: 6px;
+      top: 0;
+      width: 34px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* Penutup/spacing akhir */
+    .footer {
+      margin-top: 18px;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    /* Responsive: kecilkan font bila layar sempit */
+    @media (max-width:420px){
+      .paper { padding: 10px; }
+      .title { font-size: 20px; }
+      p, ol.hanging li, ol.hanging li::before { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  
+    <h6 class="title">﴾Shalat Tahajjud﴿</h6>
+
+    <p class="lead">
+      <b><i>
+      Sholat Tahajjud adalah sholat sunnat yang dilakukan di malam hari setelah tidur.
+      Hitungan rokaatnya paling sedikit dua rokaat dan paling banyaknya tidak terbatas.
+    </p>
+
+    <p>
+      Adapun waktunya setelah melakukan sholat isya' sampai terbitnya fajar shodiq, tapi dikerjakan di tengah malam lebih utama.
+    </p>
+
+    <p class="sub">Keutamaan nya:</p>
+
+    <p>
+      Tentang keutamaan shalat Tahajud tersebut, Rasulullah SAW suatu hari bersabda:
+      "Barang siapa mengerjakan shalat Tahajud dengan sebaik-baiknya, dan dengan tata tertib yang rapi,
+      maka Allah SWT akan memberikan 9 macam kemuliaan: 5 macam di dunia dan 4 macam di akhirat."
+    </p>
+
+    <p>
+      Adapun lima keutamaan di dunia itu, ialah:
+    </p>
+
+    <ol class="hanging">
+      <li>Akan dipelihara oleh Allah SWT dari segala macam bencana.</li>
+      <li>Tanda ketaatannya akan tampak kelihatan dimukanya.</li>
+      <li>Akan dicintai para hamba Allah yang shaleh dan dicintai oleh semua manusia.</li>
+      <li>Lidahnya akan mampu mengucapkan kata-kata yang mengandung hikmah.</li>
+      <li>Akan dijadikan orang bijaksana, yakni diberi pemahaman dalam agama.</li>
+    </ol>
+
+    <p class="sub">Sedangkan empat keutamaan di akhirat, yaitu:</p>
+    <ol class="hanging">
+      <li>Wajahnya berseri ketika bangkit dari kubur.</li>
+      <li>Akan mendapat keringanan ketika di hisab.</li>
+      <li>Ketika menyebrangi jembatan Shirotol Mustaqim, bisa melakukannya dengan sangat cepat, seperti halilintar yang menyambar.</li>
+      <li>Catatan amalnya diberikan ditangan kanan.</li>
+    </ol>
+    </b></i>
+<h6 class="title">(Niat Shalat Tahajjud)</h6>
+<p style="text-align: center;">أصَلَّى سُنَّةَ التَّهَجُدِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى </p>
+<p style="text-align: center;">نية كوله اصلاة سنة تهجد دواء ركعة كرنا الله تعالى </p>
+    <p>(Saya Niat Sholat Sunnah Tahajjud dua Rakaat Karena Allah Ta'ala)</p>
+
+    
+  </main>
+</body>
+</html>
