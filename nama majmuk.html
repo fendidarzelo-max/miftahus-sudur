@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Majmu' Ainul Hayat</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Times New Roman", serif;
+    }
+
+    body {
+      background: #ffffff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .info {
+      margin-bottom: 30px;
+    }
+
+    .row {
+      display: flex;
+      margin-bottom: 8px;
+    }
+
+    .label {
+      width: 180px;
+    }
+
+    .value::before {
+      content: ": ";
+    }
+
+    .multi .value::before {
+      content: ": ";
+    }
+
+    .cetakan p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column;
+        margin-bottom: 12px;
+      }
+
+      .label {
+        width: 100%;
+        font-weight: bold;
+      }
+
+      .value::before {
+        content: "";
+      }
+
+      .title {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="title"> <h2> MAJMU’ MIFTAHUS SYUDUR</h2></div>
+
+    <div class="info">
+      <div class="row">
+        <div class="label">Penyusun</div>
+        <div class="value">Mohammad Dahri Ridwan</div>
+      </div>
+
+      <div class="row">
+        <div class="label">Setting & Layout</div>
+        <div class="value">F-dz.id</div>
+      </div>
+
+      <div class="row">
+        <div class="label">Editor</div>
+        <div class="value">Media Center Annashar</div>
+      </div>
+
+      <div class="row">
+        <div class="label">Cover</div>
+        <div class="value">Media Center Annashar</div>
+      </div>
+
+      <div class="row multi">
+        <div class="label">Team Penashih</div>
+        
+          KH. Makmun Munharinasir<br>
+          KH. Mahrus Munharinasir<br>
+          UST. Moh. Tamim Jakfar<br>
+          H. Ismail<br>
+          
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">Penerbit</div>
+        <div class="value">Media Center Annashar</div>
+      </div>
+    </div>
+
+    <div class="cetakan">
+        <div class="row">
+        <div class="label">Edisi</div>
+      <p>Cetakan Pertama: Mei 2008</p>
+      <p>Cetakan Kedua: Juli 2009</p>
+      <p>Cetakan Ketiga: Oktober 2010</p>
+      <p>Cetakan Keempat: Agustus 2012</p>
+      <p>Cetakan Kelima: Februari 2014</p>
+      <p>Cetakan Keenam: Juni 2016</p>
+      <p>Cetakan Ketujuh: Agustus 2017</p>
+      <p>Cetakan Kedelapan: Juli 2019</p>
+      <p>Cetakan Kesembilan: Februari 2020</p>
+      <p>Cetakan Kesepuluh: Juli 2020</p>
+    </div>
+  </div>
+
+</body>
+</html>

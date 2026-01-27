@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shalat Tahajjud — Contoh Layout</title>
+  <style>
+    /* Reset kecil */
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #fff;
+      color: #111;
+      margin: 0;
+      padding: 20px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Container seperti kolom sempit di contoh */
+    .paper {
+      max-width: 480px;      /* sesuaikan lebar mirip gambar */
+      margin: 0 auto;
+      padding: 18px 22px;
+    }
+
+    /* Judul */
+    .title {
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 34px;      /* besar seperti gambar */
+      margin: 6px 0 18px;
+    }
+
+    /* Paragraf umum */
+    p {
+      margin: 0 0 12px;
+      line-height: 1.35;
+      text-align: justify;  /* rata kanan-kiri */
+      font-size: 20px;
+    }
+
+    /* Paragraf pembuka diberi indent */
+    .lead {
+      text-indent: 30px;    /* menjorok seperti contoh */
+      margin-bottom: 10px;
+    }
+
+    /* Subjudul kecil / tebal */
+    .sub {
+      font-weight: 700;
+      margin: 6px 0 10px;
+      font-size: 16px;
+    }
+
+    /* Daftar bernomor dengan hanging indent */
+    ol.hanging {
+      counter-reset: item;
+      margin: 0 0 14px 0;
+      padding-left: 0;
+      list-style: none; /* kita buat nomor sendiri */
+    }
+
+    ol.hanging li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 46px;    /* ruang untuk nomor di kiri */
+      margin-bottom: 10px;
+      text-align: justify;
+      line-height: 1.35;
+      font-size: 16px;
+    }
+
+    /* nomor styling */
+    ol.hanging li::before {
+      content: counter(item) ".";
+      position: absolute;
+      left: 6px;
+      top: 0;
+      width: 34px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* Penutup/spacing akhir */
+    .footer {
+      margin-top: 18px;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    /* Responsive: kecilkan font bila layar sempit */
+    @media (max-width:420px){
+      .paper { padding: 14px; }
+      .title { font-size: 28px; }
+      p, ol.hanging li, ol.hanging li::before { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="paper">
+ <h2 style="text-align:center;">﴾Sholat Istikhorah﴿</h2>
+
+    <p class="lead"><b>
+      Dikerjakan untuk meminta petunjuk kebaikan kepa Allah SWT. dalam memutuskan pilihan yang kita ragukan. Apakah keputusan yang akan kita ambil itu baik ataukah tidak.
+    </p>
+
+    <p class="lead">
+      Adapun bilangan rokaatnya ada dua rokaat. Sedangkan waktunya adalah selain waktu yang dimakruhkan baik siang ataupun malam.
+    </p>
+   <h3 style="text-align:center;">(NIAT SHOLAT ISTIKHORAH)</h3>
+
+
+<p style="text-align: center;">أصَلَّى سُنَّةَ الْإِسْتِخَارَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى </p>
+<p style="text-align: center;"> نية كوله اصلاة سنة استخارة دواء ركعة كرنا الله تعالى </p>
+
+<h6 style="text-align:center;"><b>(Saya Niat Sholat Sunnah Istikhorah dua Rakaat Karena Allah Ta'ala)</h6>
+    
+  </main>
+</body>
+</html>

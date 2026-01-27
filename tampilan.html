@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Majmu' Ainul Hayat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      background: #fff;
+      color: #0f9108;
+    }
+
+    /* === SLIDER === */
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      width: 400%; /* 4 gambar */
+      height: 100%;
+      animation: slide 16s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0%, 20% { margin-left: 0%; }
+      25%, 45% { margin-left: -100%; }
+      50%, 70% { margin-left: -200%; }
+      75%, 95% { margin-left: -300%; }
+      100% { margin-left: 0%; }
+    }
+
+    /* === RUNNING TEXT === */
+    .marquee {
+      width: 100%;
+      background: #06a628;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0%   { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* === LOGO DAN JUDUL === */
+    .logo {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .logo img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .logo h1 {
+      margin: 10px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* === MENU === */
+    .menu {
+      width: 85%;
+      max-width: 500px;
+      margin: 15px auto;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      background: #fdfdfd;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(8, 212, 86, 0.925);
+    }
+    .menu img {
+      width: 35px;
+      margin-right: 10px;
+    }
+
+    /* === FOOTER TULISAN ARAB === */
+    .footer-arab {
+      text-align: center;
+      margin: 30px 0 20px 0;
+      font-size: 20px;
+      font-family: "Scheherazade", "Amiri", serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDER -->
+  <div class="slider">
+    <div class="slides">
+      <img src="foto.jpeg" alt="1.jpg">
+      <img src="fotoo.jpeg" alt="Foto 2">
+      <img src="fotooo.jpeg" alt="Foto 3">
+      <img src="fotoooo.jpeg" alt="Foto 4">
+    </div>
+  </div>
+
+  <!-- RUNNING TEXT -->
+  <div class="marquee">
+    <span>Kumpulan Do'a - Do'a Dan Amaliah Keseharian Santri</span>
+  </div>
+
+  <!-- LOGO DAN JUDUL -->
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+    <h1>مجموع مفتاح الصدور</h1>
+  </div>
+
+  <!-- MENU -->
+  <a href="nama majmuk.html" class="menu"
+  style="text-decoration: none;color:#06a628"> 
+    <img src="doa.png" alt="icon"> * Nama Majmu’
+</a>
+
+  <a href="caver.html" class="menu"
+  style="text-decoration: none;color:#06a628"> 
+    <img src="doa.png" alt="icon"> * Cover Kitab dan Daftar Isi
+</a>
+  
+  <a href="kapursirih.html" class="menu"
+  style="text-decoration: none;color:#06a628"> 
+    <img src="doa.png" alt="icon"> * Sekapur Sirih
+</a>
+  <a href="daftarisi.html" class="menu"
+  style="text-decoration: none;color:#06a628">  
+    <img src="doa.png" alt="icon"> * Daftar Isi Kitab Majmu’
+    </a>
+ 
+
+  <!-- FOOTER ARAB -->
+  <div class="footer-arab">   
+    المعهد مفتاح العلوم النصر سمبار كمباع
+  </div>
+
+</body>
+</html>

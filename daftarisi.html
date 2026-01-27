@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Majmu' Ainul Hayat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      background: #fff;
+      color: #0f9108;
+    }
+
+    /* === SLIDER === */
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      width: 400%; /* 4 gambar */
+      height: 100%;
+      animation: slide 16s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0%, 20% { margin-left: 0%; }
+      25%, 45% { margin-left: -100%; }
+      50%, 70% { margin-left: -200%; }
+      75%, 95% { margin-left: -300%; }
+      100% { margin-left: 0%; }
+    }
+
+    /* === RUNNING TEXT === */
+    .marquee {
+      width: 100%;
+      background: #06a628;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0%   { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* === LOGO DAN JUDUL === */
+    .logo {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .logo img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .logo h1 {
+      margin: 10px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* === MENU === */
+    .menu {
+      width: 85%;
+      max-width: 500px;
+      margin: 15px auto;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      background: #fff;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgb(23, 151, 4);
+    }
+    .menu img {
+      width: 35px;
+      margin-right: 10px;
+    }
+
+    /* === FOOTER TULISAN ARAB === */
+    .footer-arab {
+      text-align: center;
+      margin: 30px 0 20px 0;
+      font-size: 20px;
+      font-family: "Scheherazade", "Amiri", serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDER -->
+  <div class="slider">
+    <div class="slides">
+      <img src="foto.jpeg" alt="1.jpg">
+      <img src="fotoo.jpeg" alt="Foto 2">
+      <img src="fotooo.jpeg" alt="Foto 3">
+      <img src="fotoooo.jpeg" alt="Foto 4">
+    </div>
+  </div>
+
+  <!-- RUNNING TEXT -->
+  <div class="marquee">
+    <span>Kumpulan Do'a - Do'a Dan Amaliah Keseharian Santri Pondok Pesantren Miftahul Ulum An-Nashar</span>
+  </div>
+
+  <!-- LOGO DAN JUDUL -->
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+    <h1>مجموع مفتاح الصدور</h1>
+  </div>
+
+  <!-- MENU -->
+  <a href="tawassul.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 1. {Tawassul}
+</a>
+  
+    <a href="assajadah.html" class="menu"
+      style="text-decoration: none;color:#06a628"> 
+    <img src="doa.png" alt="icon"> 2. {Surat As-Sajadah}
+  </div>
+  </a>
+
+     <a href="yasin.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 3. {Surat Yasiin}
+  </div>
+</a>
+
+    <a href="doayasin.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 4. {Doa Setelah Membaca Surat Yasin}
+  </div>
+    </a>
+
+    <a href="addhukhan.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 5. {Surat Ad-Dukhan}
+  </div>
+  </a>
+
+ <a href="waqi'ah.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 6. {Surat Waqi'ah}
+  </div>
+ </a>
+ 
+ <a href="doawaqi'ah.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 7. {Doa Setelah Membaca Surat Waqi'a}
+  </div>
+ </a>
+
+  <a href="almulk.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 8. {Surah Al-Mulk}
+  </div>
+  </a>
+
+  <a href="doawaqiah&mulk.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 9. { Doa Setelah Membaca Surat Waqi'ah dan Al-Mulk}
+  </div>
+  </a>
+
+  <a href="al-insan.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 10. {Surah Al-Insan}
+  </div>
+  </a>
+
+  <a href="alburuj.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 11. {Surah Al-Buruj}
+  </div>
+  </a>
+  
+  <a href="arrahman.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 12. {Surat Ar-Rahman}
+  </div>
+  </a>
+
+  <a href="kahfi.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 13. {Surah Al-Kahfih}
+  </div>
+  </a>
+
+  <a href="ayattujuh.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 14. {Ayat Tujuh}
+  </div>
+  </a>
+
+  <a href="ayathiris.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 15. {Ayat al-Hirzi Wa al-harsi}
+  </div>
+  </a>
+
+    <a href="ratibulhaddad.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 16. {Ratibul Haddad}
+  </div>
+    </a>
+
+  <a href="istighasah dzuhur.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 17. {Istghasah Ba'da Dzuhur Dan Asyar}
+  </div>
+  </a>
+
+  <a href="istighasa maghrib.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 18. {Istghasah Ba'da Maghrib}
+  </div>
+  </a>
+
+  <a href="istiwasa.isyak.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 19. {Istghasah Ba'da Isya'}
+  </div>
+
+  
+    <a href="istiwasah.subuh.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 20. {Istghasah Ba'da Subuh}
+  </div>
+
+  <a href="s.sulthon1.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 21. {Sholawat Sulton}
+  </div>
+  </a>
+
+  <a href="sayyidul.istifar.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 22. {Sayyidul istighfar}
+  </div>
+  </a>
+
+ <a href="istighfar.kabir.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 23. {Istighfar Kabir}
+  </div>
+ </a>
+ 
+  <a href="hamil1.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 24. {Doa Menyelamati Kelahiran I}
+  </div>
+  </a>
+  <a href="hamil2.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 25. {Doa Menyelamati Kelahiran II}
+  </div>
+  </a>
+  <a href="doa-awal&akhir-hijriyah.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 26. {Doa Awal dan Akhir Tahul Hijriyah}
+  </div>
+  </a>
+
+  <a href="doahariasyura.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 27. {Doa Hari Asyuro'(tgl.10 bln Muharrom)}
+  </div>
+  </a>
+
+  <a href="jalanian.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 28. {Tata Cara Jalanian}
+  </div>
+  </a>
+
+  <a href="doajalanian.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 29. {Doa Jalanian}
+  </div>
+  </a>
+  
+ <a href="wiridsolat.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 30. {Wirid Setelah Sholat Lima Waktu}
+  </div>
+ </a>
+
+  <a href="doasetelahsolat.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 31. {Doa Setelah Sholat}
+  </div>
+  </a>
+  
+ <a href="doasolattrawih.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 32. {Doa Sholat Tarawih}
+  </div>
+
+  <a href="doasolatwitir.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 33. {Doa Sholat Witir}
+  </div>
+  </a>
+
+  <a href="doasolatdhuha.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 34. {Doa Sholat Dluha}
+  </div>
+  </a>
+
+   <a href="solattahajjut.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 35. {Sholat Tahajjud}
+  </div>
+   </a>
+
+ <a href="doatahajjud.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 36. {Doa Sholat Tahajjud}
+  </div>
+ </a>
+ 
+ <a href="solat.itikhorah.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 37. {Sholat Istikhoroh}
+  </div>
+ </a>
+
+  <a href="doaistikharah.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 38. {Doa Sholat Istikhoroh}
+  </div>
+  </a>
+  
+   <a href="sholathajat.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 39. {Sholat Hajat}
+  </div>
+   </a>
+
+  <a href="doasholat hajat.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 40. {Doa Sholat Hajat}
+  </div>
+  </a>
+
+  <a href="nidak diba'i.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 41. {Nida' Maulid diba'I}
+  </div>
+  </a>
+
+  <a href="Maulid diba'i.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 42. {Maulid diba'I}
+  </div>
+   </a>
+
+  <a href="doa maulid.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 43. {Doa Maulid}
+  </div>
+   </a>
+
+  <a href="Doa orangtua.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 44. {Doa orang tua pada anaknya}
+  </div>
+   </a>
+
+  <a href="doa orang tua pada anaknya.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 45. {Doa Kepada Orang Tua Dua}
+  </div>
+  </a>
+
+  <a href="doa orang sakit.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 46. {Doa Menjenguk Orang Sakit}
+  </div>
+  </a>
+  
+  <a href="doa kafarotul majlis.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 47. {Doa Kafarotul Majlis}
+  </div>
+  </a>
+
+  <a href="rebu wekasan.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 48. {Doa Rabu Wakasan}
+  </div>
+  </a>
+
+  <a href="doa rokat-1.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 49. {Doa Rokatan Jawa I}
+  </div>
+  </a>
+
+  <a href="doa rokat2.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 50. {Doa Rokatan Jawa II}
+  </div>
+  </a>
+
+ <a href="doa malam sya'ban.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 51. {Doa Malam Nisfu Sya'ban}
+  </div>
+  </a>
+
+  <a href="sholat janazah.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 52. {Sholat Janazah}
+  </div>
+</a>
+
+  <a href="talqin untuk laki2.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 53. {Talqin Untuk Janazah Laki-Laki}
+  </div>
+  </a>
+
+  <a href="talqin janazah prempuan.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 54. {Talqin Untuk Janazah Prempuan}
+  </div>
+  </a>
+  <a href="qiroah idzul fitri.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 55. {Qiroah Muroqi Untuk `Idul Fitri}
+  </div>
+  </a>
+
+  <a href="qiroah idzul adha.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 56. {Qiroah Muroqi Untuk `Idul Adlha}
+  </div>
+  </a>
+
+  <a href="bacaan tahlil.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 57. {Bacaan Tahlil}
+  </div>
+  </a>
+
+   <a href="doa tahlil.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 58. {Doa Setelah Tahlil}
+  </div>
+   </a>
+
+  <a href="doa memberi nama anak.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 59. {Doa Memberi Nama Anak Laki-Laki}
+  </div>
+  </a>
+
+  <a href="doa memberi nama anak prempuan.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 60 {Doa Memberi Nama Anak Perempuan}
+  </div>
+  </a>
+  <a href="doa rumah baru.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 61. {Doa Menempati Rumah Baru}
+  </div>
+  </a>
+
+  <a href="adab ziarah kubur.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 62. {Adab Ziarah Kubur}
+  </div>
+
+  <a href="doa mengiring janazah.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 63. {Doa Untuk Mengiring Janazah}
+  </div>
+  </a>
+
+   <a href="niat nyambelih hewan aqiqoh.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 64. {Niat Menyambelih Hewan Aqiqoh}
+  </div>
+   </a>
+
+  <a href="doa menyambelih hewan aqiqoh.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 65. {Doa Menyambelih Hewan Aqiqoh}
+  </div>
+  </a>
+
+  <a href="doa selamatan aqiqah.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 66. {Doa Selamatan Aqiqoh}
+  </div>
+  </a>
+
+  <a href="sunnah.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 67. {Sunnah Sunnah Menyambelih Hewan Kurban}
+</a>
+ <a href="doa hitanan.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 68. {Doa Hitanan}
+  </div>
+ </a>
+
+  <a href="doa anak baru lahir.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 69. {Doa Menjenguk Bayi Baru Lahir}
+  </div>
+  </a>
+ <a href="niat zakat.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 70. {Niat Zakat }
+  </div>
+ </a>
+  <a href="doa setelah zakat.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 71. {Doa Setelah Menunaikan Zakat Fitra & Orang Yang Menerima Zakat Fitrah}
+  </div>
+  </a>
+
+   <a href="doa malam hari raya.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 72. {Doa Di Malam Hari Raya}
+  </div>
+   </a>
+  <a href="doa.jumat.html" class="menu"
+      style="text-decoration: none;color:#06a628">
+    <img src="doa.png" alt="icon"> 73. {Doa Setelah Sholat Jum'at}
+  </a>
+  <!-- FOOTER ARAB -->
+  <div class="footer-arab">   
+    المعهد مفتاح العلوم النصر سمبار كمباع
+  </div>
+
+</body>
+</html>
